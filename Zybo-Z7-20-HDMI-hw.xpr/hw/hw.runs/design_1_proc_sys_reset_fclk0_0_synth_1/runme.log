@@ -1,0 +1,29 @@
+
+*** Running vivado
+    with args -log design_1_proc_sys_reset_fclk0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_proc_sys_reset_fclk0_0.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_proc_sys_reset_fclk0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 448.586 ; gain = 158.855
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.ipdefs/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/senur/Desktop/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_proc_sys_reset_fclk0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry e4d5a5451c942ed2 to dir: C:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.runs/design_1_proc_sys_reset_fclk0_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.cache/ip/2023.1/e/4/e4d5a5451c942ed2/design_1_proc_sys_reset_0_0.dcp to C:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.runs/design_1_proc_sys_reset_fclk0_0_synth_1/design_1_proc_sys_reset_fclk0_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.cache/ip/2023.1/e/4/e4d5a5451c942ed2/design_1_proc_sys_reset_0_0_sim_netlist.v to C:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.runs/design_1_proc_sys_reset_fclk0_0_synth_1/design_1_proc_sys_reset_fclk0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.cache/ip/2023.1/e/4/e4d5a5451c942ed2/design_1_proc_sys_reset_0_0_sim_netlist.vhdl to C:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.runs/design_1_proc_sys_reset_fclk0_0_synth_1/design_1_proc_sys_reset_fclk0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.cache/ip/2023.1/e/4/e4d5a5451c942ed2/design_1_proc_sys_reset_0_0_stub.v to C:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.runs/design_1_proc_sys_reset_fclk0_0_synth_1/design_1_proc_sys_reset_fclk0_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.cache/ip/2023.1/e/4/e4d5a5451c942ed2/design_1_proc_sys_reset_0_0_stub.vhdl to C:/Users/senur/Desktop/HDMI_Output_Test/Zybo-Z7-20-HDMI-hw.xpr/hw/hw.runs/design_1_proc_sys_reset_fclk0_0_synth_1/design_1_proc_sys_reset_fclk0_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_proc_sys_reset_fclk0_0, cache-ID = e4d5a5451c942ed2.
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  3 17:10:43 2026...

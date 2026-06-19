@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jul  6 13:35:23 2023
+# Process ID: 15752
+# Current directory: C:/Users/tesla369/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16552
+# Log file: C:/Users/tesla369/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/tesla369/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On: DESKTOP-51FNB60, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 10, Host memory: 34257 MB
+#-----------------------------------------------------------
+start_gui
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+set_param board.repoPaths {C:/Users/tesla369/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store c:/gigigit/vivado-boards/new}
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:arty:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:arty-a7-100:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:arty-a7-35:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:arty-s7-25:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:arty-s7-50:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:arty-z7-10:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:arty-z7-20:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:basys3:1.2]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:cmod_a7-15t:1.2]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:cmod_a7-35t:1.2]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:cmod-s7-25:1.0]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:cora-z7-07s:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:cora-z7-10:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:eclypse-z7:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:gzu_3eg:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:gzu_5ev:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:genesys2:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:nexys-a7-100t:1.2]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:nexys-a7-50t:1.2]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:nexys_video:1.2]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:nexys4:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:nexys4_ddr:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:usb104-a7:1.3]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:zedboard:1.0]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:zybo:1.0]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:zybo-z7-10:1.1]
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:zybo-z7-20:1.1]
+source I:/Zybo-Z7/hw/scripts/checkout.tcl
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_1_axis_subset_converter_in_0_synth_1
+reset_run design_1_v_axi4s_vid_out_0_0_synth_1
+reset_run design_1_axis_subset_converter_out_0_synth_1
+reset_run design_1_v_tc_in_0_synth_1
+reset_run design_1_v_tc_out_0_synth_1
+reset_run design_1_v_vid_in_axi4s_0_0_synth_1
+reset_run design_1_s00_regslice_0_synth_1
+reset_run design_1_s01_regslice_0_synth_1
+reset_run design_1_auto_pc_1_synth_1
+reset_run design_1_axi_vdma_0_0_synth_1
+reset_run design_1_axi_dynclk_0_0_synth_1
+reset_run design_1_proc_sys_reset_fclk1_0_synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_rgb2dvi_1_0_synth_1
+reset_run design_1_axi_gpio_video_0_synth_1
+reset_run design_1_xbar_0_synth_1
+reset_run design_1_auto_pc_0_synth_1
+reset_run design_1_proc_sys_reset_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_1_axis_subset_converter_in_0_synth_1
+reset_run design_1_v_axi4s_vid_out_0_0_synth_1
+reset_run design_1_axis_subset_converter_out_0_synth_1
+reset_run design_1_v_tc_in_0_synth_1
+reset_run design_1_v_vid_in_axi4s_0_0_synth_1
+reset_run design_1_s00_regslice_0_synth_1
+reset_run design_1_s01_regslice_0_synth_1
+reset_run design_1_auto_pc_1_synth_1
+reset_run design_1_axi_vdma_0_0_synth_1
+reset_run design_1_axi_dynclk_0_0_synth_1
+reset_run design_1_proc_sys_reset_fclk1_0_synth_1
+reset_run design_1_rgb2dvi_1_0_synth_1
+reset_run design_1_auto_pc_0_synth_1
+reset_run design_1_proc_sys_reset_0_0_synth_1
+reset_run design_1_proc_sys_reset_fclk0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_1_axis_subset_converter_in_0_synth_1
+reset_run design_1_v_axi4s_vid_out_0_0_synth_1
+reset_run design_1_v_vid_in_axi4s_0_0_synth_1
+reset_run design_1_s00_regslice_0_synth_1
+reset_run design_1_s01_regslice_0_synth_1
+reset_run design_1_auto_pc_1_synth_1
+reset_run design_1_axi_dynclk_0_0_synth_1
+reset_run design_1_proc_sys_reset_fclk1_0_synth_1
+reset_run design_1_rgb2dvi_1_0_synth_1
+reset_run design_1_auto_pc_0_synth_1
+reset_run design_1_proc_sys_reset_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 7
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_1_v_vid_in_axi4s_0_0_synth_1
+reset_run design_1_auto_pc_1_synth_1
+reset_run design_1_axi_dynclk_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+archive_project I:/Zybo-Z7/hw/Zybo-Z7-20-HDMI-hw.xpr.zip -temp_dir I:/Zybo-Z7/hw -force -include_local_ip_cache -include_config_settings
