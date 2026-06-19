@@ -1,0 +1,37 @@
+2026-06-19T04:09:23.805190100255-04:09:23 **** Incremental Build of configuration Debug for project Zybo-Z7-20-HDMI ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/video_demo.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -II:/Zybo-Z7/sw/src/Zybo-Z7-20-HDMI/src -c -fmessage-length=0 -MT"src/video_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/senur/Desktop/HDMI_Output_Test/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/video_demo.d" -MT"src/video_demo.o" -o "src/video_demo.o" "../src/video_demo.c"
+000-In file included from C:/Users/senur/Desktop/HDMI_Output_Test/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xaxivdma_i.h:52,
+000-                 from C:/Users/senur/Desktop/HDMI_Output_Test/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xaxivdma.h:297,
+000-                 from ../src/video_capture/video_capture.h:75,
+000-                 from ../src/video_demo.h:32,
+000-                 from ../src/video_demo.c:28:
+000/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xdebug.h21-1-1#warning DEBUG is enabled [-Wcpp]1-C:/Users/senur/Desktop/HDMI_Output_Test/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xdebug.h:21:2: warning: #warning DEBUG is enabled [-Wcpp]
+000-   21 | #warning DEBUG is enabled
+000-      |  ^~~~~~~
+000-../src/video_demo.c: In function 'DemoGetInactiveFrame':
+000/Zybo-Z7-20-HDMI/src/video_demo.c916-1-1control reaches end of non-void function [-Wreturn-type]1-../src/video_demo.c:916:1: warning: control reaches end of non-void function [-Wreturn-type]
+000-  916 | }
+000-      | ^
+000-'Finished building: ../src/video_demo.c'
+000-' '
+000-'Building target: Zybo-Z7-20-HDMI.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,C:\Users\senur\Desktop\HDMI_Output_Test\Zybo-Z7-20-HDMI\src\lscript.ld -LC:/Users/senur/Desktop/HDMI_Output_Test/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "Zybo-Z7-20-HDMI.elf"  ./src/video_capture/video_capture.o  ./src/timer_ps/timer_ps.o  ./src/intc/intc.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/video_demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: Zybo-Z7-20-HDMI.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size Zybo-Z7-20-HDMI.elf  |tee "Zybo-Z7-20-HDMI.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 103543	   7608	24909104	25020255	17dc75f	Zybo-Z7-20-HDMI.elf
+000-'Finished building: Zybo-Z7-20-HDMI.elf.size'
+000-' '
+00255-
+04:09:25 Build Finished (took 2s.12ms)
+
