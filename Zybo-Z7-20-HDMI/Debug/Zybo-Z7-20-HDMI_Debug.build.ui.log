@@ -1,4 +1,4 @@
-2026-06-19T15:42:22.226209200255-15:42:22 **** Incremental Build of configuration Debug for project Zybo-Z7-20-HDMI ****
+2026-06-19T16:33:27.327944200255-16:33:27 **** Incremental Build of configuration Debug for project Zybo-Z7-20-HDMI ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
@@ -16,8 +16,8 @@
 000-   21 | #warning DEBUG is enabled
 000-      |  ^~~~~~~
 000-../src/video_demo.c: In function 'DemoGetInactiveFrame':
-000/Zybo-Z7-20-HDMI/src/video_demo.c927-1-1control reaches end of non-void function [-Wreturn-type]1-../src/video_demo.c:927:1: warning: control reaches end of non-void function [-Wreturn-type]
-000-  927 | }
+000/Zybo-Z7-20-HDMI/src/video_demo.c943-1-1control reaches end of non-void function [-Wreturn-type]1-../src/video_demo.c:943:1: warning: control reaches end of non-void function [-Wreturn-type]
+000-  943 | }
 000-      | ^
 000-'Finished building: ../src/video_demo.c'
 000-' '
@@ -29,9 +29,9 @@
 000-'Invoking: ARM v7 Print Size'
 000-arm-none-eabi-size Zybo-Z7-20-HDMI.elf  |tee "Zybo-Z7-20-HDMI.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000- 103731	   7608	24909104	25020443	17dc81b	Zybo-Z7-20-HDMI.elf
+000- 103859	   7608	24909104	25020571	17dc89b	Zybo-Z7-20-HDMI.elf
 000-'Finished building: Zybo-Z7-20-HDMI.elf.size'
 000-' '
 00255-
-15:42:26 Build Finished (took 3s.914ms)
+16:33:29 Build Finished (took 1s.799ms)
 

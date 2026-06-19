@@ -486,7 +486,7 @@ void drawMap(u8 *frame)
 			{
 				case TILE_TRACK: r = 80; g = 80; b = 80;  break;//track tarmac
 				case TILE_WALL: r = 255; g = 255; b = 255; break;//wall colour
-				case TILE_FINISH: if ((px / (TILE_SIZE/2) + py) / (TILE_SIZE/2) % 2 == 0)
+				case TILE_FINISH: if ((px / 4 + py /4) % 2 == 0)
 				{
 					r  =255, g = 255, b = 255;
 				}
@@ -670,15 +670,13 @@ void DemoRun()
 	int drawFrame;
 	int frameCount = 0;
 	u8 *frame;
-
 	int carDir = DIR_UP;
-
+	int timerRunning = 0;
 
 	xil_printf("Resolution: %dx%d\r\n", (int)dispCtrl.vMode.width, (int)dispCtrl.vMode.height);
 
 	while(1)
 	{
-		frameCount++;
 		// pick back buffer
 		drawFrame = (dispCtrl.curFrame == 1) ? 2 : 1;
 		frame = pFrames[drawFrame];
@@ -764,6 +762,24 @@ void DemoRun()
 			carY = prevcarY;
 			frameCount+= 90;
 		}
+
+		int currentTileX = carX / TILE_SIZE;
+		int currentTileY = carY / TILE_SIZE;
+
+		if (trackMap[currentTileY][currentTileX] == TILE_FINISH)
+		{
+			if (!timerRunning)
+			{
+				timerRunning = 1;
+				frameCount = 0;
+			}
+			else
+			{
+				timerRunning = 0;
+			}
+		}
+
+		if (timerRunning) frameCount++;
 
 
 
